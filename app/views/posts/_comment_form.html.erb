@@ -1,0 +1,11 @@
+<%= form_with(model: [post, comment]) do |f| %>
+<%= f.label :content %>
+<%= f.text_field :content %>
+<%= f.submit %>
+<% end %>
+
+<ul id= "post_comments_list">
+<% post.comments.each do |c| %>
+<li><%= c.content %></li>
+<% end %>
+</ul>

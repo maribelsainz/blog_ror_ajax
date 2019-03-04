@@ -1,0 +1,2 @@
+$('.modal-body').html("<h4><%= @post.title %></h4> <%= j render 'comment_form', post: @post, comment: Comment.new %>")
+$('#modal-edit').modal('show')
